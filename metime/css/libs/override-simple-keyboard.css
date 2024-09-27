@@ -1,0 +1,19 @@
+/* key element - .hg-button data-skbtn="키값" 패턴 */
+
+/* key element - 전체 */
+/* 
+.hg-button[data-skbtn] {
+  max-width: 50px;
+}
+*/
+
+/* key element - 공백키 */
+.hg-button[data-skbtn="{//}"]
+{
+  visibility: hidden;
+}
+
+/* key element - backspace키 */
+/*
+.hg-button[data-skbtn="{bksp}"] {}
+*/

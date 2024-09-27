@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<title>ME TIME :: Signup</title>
+
+	<link rel="stylesheet" type="text/css" href="css/libs/swiper-bundle.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/metime.css" />
+</head>
+<body>
+	<div class="wrap signup-page">
+		<header class="header">
+			<button type="button" class="btn-back" aria-label="Back">
+				<img src="images/svg/icon-back.svg" alt="">
+			</button>
+			<h1 class="logo-app">MeTime</h1>
+		</header>
+		<main class="content">
+			<div class="inner">
+				<div class="head-box">
+					<h2 class="title">Sign up</h2>
+				</div>
+				<div class="content-box">
+					<div class="text-field-area">
+						<div class="input-form">
+							<label for="full-name" class="input-label">Full Name</label>
+							<input id="full-name" type="text" placeholder="Enter your full name" class="input-item">
+						</div>
+						<div class="input-form">
+							<label for="email" class="input-label">Email</label>
+							<input id="email" type="text" placeholder="Enter your email" class="input-item">
+						</div>
+						<div class="input-form">
+							<label for="password" class="input-label">Password</label>
+							<input id="password" type="password" placeholder="Enter your password" class="input-item js-input-type">
+							<i class="icon-eye js-show-hide-pass"></i>
+						</div>
+						<div class="input-form">
+							<label for="phone-number" class="input-label">Phone Number</label>
+							<div class="input-form-parent">
+								<div class="input-form-child option-wrap">
+									<div class="select-box">
+										<button type="button" class="text-value">+55</button>
+									</div>
+									<div class="option-box">
+										<ul class="option-list">
+											<li class="option-item">
+												<span class="option-name">Vietnam</span>
+												<span class="option-text">+84</span>
+											</li>
+											<li class="option-item">
+												<span class="option-name">US</span>
+												<span class="option-text">+55</span>
+											</li>
+											<li class="option-item is-selected">
+												<span class="option-name">Brazil</span>
+												<span class="option-text">+10</span>
+											</li>
+											<li class="option-item">
+												<span class="option-name">Thailand</span>
+												<span class="option-text">+02</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<input id="phone-number" type="number" placeholder="Enter your phone number" class="input-item">
+							</div>
+						</div>
+					</div>
+					<div class="button-area">
+						<button type="button" class="btn btn-primary btn-register">Register</button>
+						<div class="other-option-btn">
+							<span class="text">Already have an account</span>
+							<a href="03_00_login.html" class="btn btn-outline">Log In</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+
+
+	<script src="js/libs/jquery.min.js"></script>
+	<script src="js/libs/swiper-bundle.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

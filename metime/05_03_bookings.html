@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<title>ME TIME :: Booking</title>
+
+	<link rel="stylesheet" type="text/css" href="css/libs/swiper-bundle.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/metime.css" />
+</head>
+<body>
+	<div class="wrap booking-page">
+		<header class="header">
+			<button type="button" class="btn-back" aria-label="Back">
+				<img src="images/svg/icon-back.svg" alt="">
+			</button>
+			<h1 class="logo-app">MeTime</h1>
+		</header>
+		<main class="content">
+			<div class="head-box">
+				<div class="inner">
+					<h2 class="title">Your Bookings</h2>
+				</div>
+			</div>
+			<div class="content-box">
+				<div class="tab-area">
+					<ul class="tab-list">
+						<li class="tab-item is-active"><button type="button" class="btn-tab js-btn-tab" id="#tabContentPast">Past</button></li>
+						<li class="tab-item"><button type="button" class="btn-tab js-btn-tab" id="#tabContentUpcoming">Upcoming</button></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-panel is-active" id="tabContentPast">
+							<ul class="panel-list">
+								<li class="panel-item">
+									<strong class="text-title">Luna's Salon</strong>
+									<p class="text-detail text-col">
+										<span>with Paty Sinclair</span>
+										<span>5.0 Kms</span>
+									</p>
+									<span class="text">Basic Manicure 1 x</span>
+									<p class="text-time text-col">
+										<span>8 Mar 2022</span>
+										<span>$30</span>
+									</p>
+								</li>
+								<li class="panel-item">
+									<strong class="text-title">The Gallery Salon</strong>
+									<p class="text-detail text-col">
+										<span>with Anna Smith</span>
+										<span>5.0 Kms</span>
+									</p>
+									<span class="text">Basic Manicure 1 x + Basic Pedicure 1 x</span>
+									<p class="text-time text-col">
+										<span>12 May 2022</span>
+										<span>$65</span>
+									</p>
+								</li>
+								<li class="panel-item">
+									<strong class="text-title">Luna's Salon</strong>
+									<p class="text-detail text-col">
+										<span>with Paty Sinclair</span>
+										<span>5.0 Kms</span>
+									</p>
+									<span class="text">Basic Manicure 1 x</span>
+									<p class="text-time text-col">
+										<span>8 Mar 2022</span>
+										<span>$30</span>
+									</p>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-panel" id="tabContentUpcoming">
+							<ul class="panel-list">
+								<li class="panel-item">
+									<strong class="text-title">The Gallery Salon</strong>
+									<p class="text-detail text-col">
+										<span>with Anna Smith</span>
+										<span>5.0 Kms</span>
+									</p>
+									<span class="text">Acrylic Extensions 1 x + Gel Manicure 1 x</span>
+									<p class="text-time text-col">
+										<span>19 Oct 2023</span>
+										<span>$150</span>
+									</p>
+									<span class="status">Cancel</span>
+								</li>
+								<li class="panel-item">
+									<strong class="text-title">Luna's Salon</strong>
+									<p class="text-detail text-col">
+										<span>with Paty Sinclair</span>
+										<span>5.0 Kms</span>
+									</p>
+									<span class="text">Basic Manicure 1 x</span>
+									<p class="text-time text-col">
+										<span>31 Oct 2023</span>
+										<span>$55</span>
+									</p>
+									<span class="status">Cancel</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+
+	<!-- POPUP -->
+	<div class="layer" style="display:none">
+		<strong class="blind">Cancel Booking</strong>
+		<div class="popup popup-center popup-cancel">
+			<div class="popup-inner">
+				<div class="popup-content">
+					<span class="icon"><img src="images/img-x.png" alt=""></span>
+					<strong class="popup-title">Are you sure, you want to <em>cancel</em> this appointment?</strong>
+					<div class="popup-btn">
+						<button type="button" class="btn">No</button>
+						<button type="button" class="btn btn-primary">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="dimmed" style="display:block"></div>
+	</div>
+	<!-- END POPUP -->
+
+	<script src="js/libs/jquery.min.js"></script>
+	<script src="js/libs/swiper-bundle.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<!-- 마크업 검수용 -->
+	<style>
+		.caseview{position:fixed;bottom:30px;right:10px;padding:5px;background:rgba(0,0,0,0.5);z-index:700}
+		.caseview a{display:block;padding:5px;color:#fff;font-size:12px}
+		.caseview a:hover{color:gold}
+		.caseview .point_view{color:gold}
+	</style>
+	<div class="caseview">
+		<a href="#" class="caseviewOpen" onclick=";return false;">[Popup] Cancel popup</a>
+	</div>
+</body>
+</html>

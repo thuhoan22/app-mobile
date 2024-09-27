@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>METIME INDEX</title>
+<style>
+@charset "utf-8";
+/* Common */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,table,th,td,form,fieldset,legend,textarea,input,select,textarea,button,article,aside,dialog,footer,header,section,footer,nav,figure,main{margin:0;padding:0}
+article,aside,dialog,footer,header,section,footer,nav,figure,main{display:block}
+html,body{height:100%;-webkit-text-size-adjust:none;-ms-text-size-adjust:none}
+body,input,select,textarea,button{font-family:'나눔고딕',NanumGothic,'맑은 고딕','Malgun Gothic','돋움',Dotum,'굴림',Gulim,Helvetica;font-size:12px;color:#333;line-height:1.2} 
+fieldset,li,img{border:0;vertical-align:top}
+ul,ol{list-style:none}
+button{overflow:visible;border:0;background-color:transparent;cursor:pointer}
+button::-moz-focus-inner{padding:0;border:0}
+address,caption,em{font-style:normal}
+a,a:focus,a:active,a:hover{color:#000;text-decoration:none}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:none}
+.blind,caption span,legend{overflow:hidden;position:absolute;top:0;left:0;width:1px;height:1px;font-size:1px;line-height:100px;white-space:nowrap}
+/* index */
+body{padding:0 15px;word-wrap:break-word;word-break:break-all}
+header{padding:10px 0}
+h1{font-size:18px}
+h1:before{display:inline;content:'['}
+h1:after{display:inline;content:']'}
+h2{clear:both;padding:30px 0 5px;border-bottom:3px solid #333;font-size:16px}
+h3{clear:both;padding:30px 0 5px;border-bottom:1px solid #333;font-size:14px}
+.markup,.guide{margin-bottom:50px}
+.markup li{border-bottom:1px solid #dfdfdf}
+.markup li a{display:block;padding:8px 30px 6px 2px;background:url(http://static.naver.com/www/m/cm/im/bu_lk.gif) no-repeat 100% 50%}
+.markup li span{margin-left:5px;font-size:11px;color:#909090}
+.markup li .dsc:before{display:inline;padding:0 3px;content:'('}
+.markup li .dsc:after{display:inline;padding:0 3px;content:')'}
+.markup li .new,.markup li .up,.markup li .etc,.markup li .del{height:14px;padding:1px 2px;border-radius:3px;font-family:verdana;font-size:11px;font-weight:normal;color:#fff;line-height:14px;vertical-align:middle}
+.new{background:#fd3939}
+.up{background:#45a7fb}
+.etc{background:#2fbf6d}
+.del{background:#a5a5a5}
+.guide li{position:relative;padding:5px 2px 5px 20px}
+.guide li:before{position:absolute;top:5px;left:0;content:'•'}
+.guide li em{display:inline-block;margin:0 5px 0 -5px;padding:0 5px;background:#f4f4f4}
+footer{clear:both;padding:10px;background:#f4f4f4;text-align:center}
+dt,dd{display:inline}
+dt:after{display:inline;content:': '}
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(function(){
+	$('#content a').each(function(){
+		$('<span>/ '+$(this).attr('href')+'</span>').appendTo($(this));
+	});
+});
+</script>
+</head>
+<body>
+
+<header>
+	<h1>ME TIME</h1>
+</header>
+
+<div id="content">
+	<h2>Index</h2>
+
+	<section class="markup">
+		<h3>Browser View</h3>
+		<ul>
+			<li><a href="01_browser_view.html"><span class="up">2024.09.23 | UPDATE</span></a></li>
+		</ul>
+		<h3>Onboarding</h3>
+		<ul>
+			<li><a href="02_00_onboarding.html"><span class="new">2024.09.06 | NEW</span></a></li>
+			<li><a href="02_01_onboarding_popup.html"><span class="new">2024.09.06 | NEW</span></a></li>
+		</ul>
+		<h3>Log in/Create Account</h3>
+		<ul>
+			<li><a href="03_00_login.html"><span class="new">2024.09.23 | NEW</span></a></li>
+			<li><a href="03_01_enter_code.html"><span class="new">2024.09.24 | NEW</span></a></li>
+			<li><a href="03_02_signup.html"><span class="new">2024.09.24 | NEW</span></a></li>
+		</ul>
+		<h3>Main Page</h3>
+		<ul>
+			<li><a href="04_00_mainpage.html"><span class="new">2024.09.25 | NEW</span></a></li>
+			<li><a href="04_01_about_salon.html"><span class="new">2024.09.26 | NEW</span></a></li>
+		</ul>
+		<h3>Booking</h3>
+		<ul>
+			<li><a href="05_00_professionals_calendar.html"><span class="new">2024.09.26 | NEW</span></a></li>
+			<li><a href="05_01_no_preference.html"><span class="new">2024.09.26 | NEW</span></a></li>
+			<li><a href="05_02_sucessfull_page.html"><span class="new">2024.09.26 | NEW</span></a></li>
+			<li><a href="05_03_bookings.html"><span class="new">2024.09.26 | NEW</span></a></li>
+			<li><a href="05_04_cancel_popup.html"><span class="new">2024.09.26 | NEW</span></a></li>
+		</ul>
+		<h3>Checkout/Payment</h3>
+		<ul>
+			<li><a href="06_00_checkout.html"><span class="new">2024.09.27 | NEW</span></a></li>
+			<li><a href="06_01_payment_method_popup.html"><span class="new">2024.09.27 | NEW</span></a></li>
+			<li><a href="06_02_add_card.html"><span class="new">2024.09.27 | NEW</span></a></li>
+		</ul>
+	</section>
+</div>
+
+<footer>
+	<dl>
+	<dt>Copyright</dt>
+	<dd>Hanni Nguyen</dd>
+	</dl>
+</footer>
+</body>
+</html>

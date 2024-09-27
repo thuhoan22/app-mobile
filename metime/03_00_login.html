@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<title>ME TIME :: Login</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-keyboard/3.7.101/css/index.min.css" integrity="sha512-GkyxzRpjyXraxlcgIIi8sCfj5DBT2vH8LEenwDipsWyb31zu7jR0SpQqYco7fD/pxmfvACVfWOYUHQbWyENYhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+	<link rel="stylesheet" type="text/css" href="css/libs/swiper-bundle.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/libs/override-simple-keyboard.css" />
+	<link rel="stylesheet" type="text/css" href="css/metime.css" />
+</head>
+<body>
+	<div class="wrap login-page">
+		<header class="header">
+			<button type="button" class="btn-back" aria-label="Back">
+				<img src="images/svg/icon-back.svg" alt="">
+			</button>
+			<h1 class="logo-app">MeTime</h1>
+		</header>
+		<main class="content content-full">
+			<div class="inner">
+				<div class="head-box">
+					<h2 class="title">Log in</h2>
+					<p class="text-desc">Please confirm your country code and enter your phone number.</p>
+				</div>
+				<div class="content-box">
+					<div class="text-field-area">
+						<div class="country option-wrap">
+							<!-- [D] The flag will change to corresponding to the selected country  -->
+							<span class="country-flag"><img src="images/svg/icon-brazil.svg" alt="Brazil"></span>
+							<!-- [D] add class .is-open into class .option-wrap when click -->
+							<div class="country-option">
+								<div class="select-box">
+									<button type="button" class="text-value">Brazil</button>
+								</div>
+								<div class="option-box">
+									<ul class="option-list">
+										<li class="option-item"><span class="option-text">USA</span></li>
+										<li class="option-item"><span class="option-text">US</span></li>
+										<li class="option-item"><span class="option-text">UK</span></li>
+										<li class="option-item"><span class="option-text">Vietnam</span></li>
+										<li class="option-item"><span class="option-text">Korea</span></li>
+										<li class="option-item is-selected"><span class="option-text">Brazil</span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="phone">
+							<!-- [D] The Telephone area code will change to corresponding to the selected country  -->
+							<span class="tel-area-code">+55</span>
+							<input type="number" placeholder="00 0 0000 0000" class="input-item">
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="03_01_enter_code.html" class="btn btn-bottom btn-primary">Continue</a>
+
+			<!-- <div class="js-keyboard-component" data-mode="otp">
+				<input class="js-keyboard-input" placeholder="OTP number" readonly />
+				<button class="js-show-toggle">keyboard toggle</button>
+				<div class="js-keyboard-container"></div>
+			</div> -->
+		</main>
+	</div>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/simple-keyboard/3.7.101/index.min.js" integrity="sha512-gK63SBDoz6e5TTaP6eJvPpeeP8H4Jbp/op35tMzpXWFyOys0l65wsUKJqXjEirJAMyPYEpLg6dwDX6KtzRNRVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/libs/jquery.min.js"></script>
+	<script src="js/libs/swiper-bundle.min.js"></script>
+	<script src="js/keyboard.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

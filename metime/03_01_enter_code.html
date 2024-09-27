@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<title>ME TIME :: Enter code</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-keyboard/3.7.101/css/index.min.css" integrity="sha512-GkyxzRpjyXraxlcgIIi8sCfj5DBT2vH8LEenwDipsWyb31zu7jR0SpQqYco7fD/pxmfvACVfWOYUHQbWyENYhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+	<link rel="stylesheet" type="text/css" href="css/libs/swiper-bundle.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/libs/override-simple-keyboard.css" />
+	<link rel="stylesheet" type="text/css" href="css/metime.css" />
+</head>
+<body>
+	<div class="wrap otp-verification-page">
+		<header class="header">
+			<button type="button" class="btn-back" aria-label="Back">
+				<img src="images/svg/icon-back.svg" alt="">
+			</button>
+			<h1 class="logo-app">MeTime</h1>
+		</header>
+		<main class="content">
+			<div class="inner">
+				<div class="head-box">
+					<h2 class="title">Enter code</h2>
+					<p class="text-desc">We’ve sent an SMS with an activation code to your phone <em>+55 47 9 9991 5060</em></p>
+				</div>
+				<div class="content-box js-keyboard-component" data-mode="otp">
+					<div class="otp-verification-box">
+						<div class="input-group-area">
+							<div class="input-pincode">
+								<input type="text" class="text-value js-keyboard-input" placeholder="0" maxlength="1">
+							</div>
+							<div class="input-pincode">
+								<input type="text" class="text-value js-keyboard-input" placeholder="0" maxlength="1">
+							</div>
+							<div class="input-pincode">
+								<input type="text" class="text-value js-keyboard-input" placeholder="0" maxlength="1">
+							</div>
+							<div class="input-pincode">
+								<input type="text" class="text-value js-keyboard-input" placeholder="0" maxlength="1">
+							</div>
+							<div class="input-pincode">
+								<input type="text" class="text-value js-keyboard-input" placeholder="0" maxlength="1">
+							</div>
+						</div>
+						<div class="resend-box">
+							<button type="button" class="btn-resend">Send code again</button>
+							<span class="remain-time">00:20</span>
+						</div>
+						<div class="js-keyboard-container"></div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/simple-keyboard/3.7.101/index.min.js" integrity="sha512-gK63SBDoz6e5TTaP6eJvPpeeP8H4Jbp/op35tMzpXWFyOys0l65wsUKJqXjEirJAMyPYEpLg6dwDX6KtzRNRVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/libs/jquery.min.js"></script>
+	<script src="js/libs/swiper-bundle.min.js"></script>
+	<script src="js/keyboard.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

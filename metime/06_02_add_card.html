@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<title>ME TIME :: Add card</title>
+
+	<link rel="stylesheet" type="text/css" href="css/libs/swiper-bundle.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/metime.css" />
+</head>
+<body>
+	<div class="wrap payment-page">
+		<header class="header">
+			<button type="button" class="btn-back" aria-label="Back">
+				<img src="images/svg/icon-back.svg" alt="">
+			</button>
+			<h1 class="logo-app">MeTime</h1>
+		</header>
+		<main class="content content-full">
+			<div class="inner">
+				<div class="head-box">
+					<h2 class="title">Add card</h2>
+				</div>
+				<div class="content-box">
+					<div class="text-field-area">
+						<div class="input-form">
+							<label for="cardholder-name" class="input-label">Cardholder name</label>
+							<input id="cardholder-name" type="text" placeholder="Enter cardholder name" class="input-item" value="Jannet Klein">
+						</div>
+						<div class="input-form">
+							<label for="card-number" class="input-label">Card number</label>
+							<div class="input-form-parent">
+								<div class="input-form-child option-wrap js-option-img">
+									<div class="select-box">
+										<button type="button" class="text-value"><img src="images/svg/icon-mastercard.svg" alt=""></button>
+									</div>
+									<div class="option-box">
+										<ul class="option-list">
+											<li class="option-item">
+												<span class="option-name">Mastercard</span>
+												<span class="option-text"><img src="images/svg/icon-mastercard.svg" alt=""></span>
+											</li>
+											<li class="option-item">
+												<span class="option-name">Paypal</span>
+												<span class="option-text"><img src="images/svg/icon-paypal.svg" alt=""></span>
+											</li>
+											<li class="option-item is-selected">
+												<span class="option-name">Apple pay</span>
+												<span class="option-text"><img src="images/svg/icon-apple-pay.svg" alt=""></span>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<input id="card-number" type="text" placeholder="Enter card number" class="input-item" value="7236 xxxx xxxx 2345">
+							</div>
+						</div>
+						<div class="input-form">
+							<label for="card-number" class="input-label">Card number</label>
+							<input id="card-number" type="text" placeholder="Enter card number" class="input-item" value="7236 xxxx xxxx 2345">
+						</div>
+						<div class="input-form input-form-group">
+							<div class="col">
+								<label for="exp-date" class="input-label">Exp. Date</label>
+								<input id="exp-date" type="text" placeholder="MM/YY" class="input-item">
+							</div>
+							<div class="col">
+								<label for="cvv" class="input-label">CVV</label>
+								<input id="cvv" type="text" placeholder="123" class="input-item">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button type="button" class="btn btn-bottom btn-primary">Add Card</button>
+		</main>
+	</div>
+
+	<script src="js/libs/jquery.min.js"></script>
+	<script src="js/libs/swiper-bundle.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

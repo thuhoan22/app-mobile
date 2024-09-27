@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<title>ME TIME :: Payment Method</title>
+	<link rel="stylesheet" type="text/css" href="css/libs/swiper-bundle.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/metime.css" />
+</head>
+<body>
+	<!-- POPUP -->
+	<div class="layer">
+		<strong class="blind">Add payment method</strong>
+		<div class="popup popup-payment-method" style="bottom:0">
+			<div class="popup-header">
+				<button type="button" class="btn-close"><img src="images/svg/icon-close.svg" alt=""></button>
+				<strong class="header-title">Add payment method</strong>
+			</div>
+			<div class="popup-content">
+				<ul class="payment-method-list">
+					<li class="payment-method-item">
+						<a href="#none" class="payment-method-link">
+							<div class="info">
+								<span class="image"><img src="images/svg/icon-apple-pay.svg" alt="Apple Pay"></span>
+								<span class="text">Apple Pay</span>
+							</div>
+							<span class="btn-pay"></span>
+						</a>
+					</li>
+					<li class="payment-method-item">
+						<a href="#none" class="payment-method-link">
+							<div class="info">
+								<span class="image"><img src="images/svg/icon-paypal.svg" alt="PayPal"></span>
+								<span class="text">PayPal</span>
+							</div>
+							<span class="btn-pay"></span>
+						</a>
+					</li>
+					<li class="payment-method-item">
+						<a href="#none" class="payment-method-link">
+							<div class="info">
+								<span class="image"><img src="images/svg/icon-cash.svg" alt="Cash"></span>
+								<span class="text">Cash</span>
+							</div>
+							<span class="btn-pay"></span>
+						</a>
+					</li>
+					<li class="payment-method-item is-exist">
+						<div class="info">
+							<span class="image"><img src="images/svg/icon-credit-card.svg" alt="Apple Pay"></span>
+							<span class="text">7236 xxxx xxxx 2345</span>
+						</div>
+						<button type="button" class="btn-remove">Remove</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="dimmed" style="display:block"></div>
+	</div>
+	<!-- END POPUP -->
+
+	<script src="js/libs/jquery.min.js"></script>
+	<script src="js/libs/swiper-bundle.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

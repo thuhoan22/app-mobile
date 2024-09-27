@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<title>ME TIME :: Checkout</title>
+
+	<link rel="stylesheet" type="text/css" href="css/libs/swiper-bundle.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/metime.css" />
+</head>
+<body>
+	<div class="wrap checkout-page">
+		<header class="header">
+			<button type="button" class="btn-back" aria-label="Back">
+				<img src="images/svg/icon-back.svg" alt="">
+			</button>
+			<h1 class="logo-app">Checkout</h1>
+		</header>
+		<main class="content content-full">
+			<h2 class="title-guide">Please check the details and <br>confirm your appointment</h2>
+			<div class="payment-detail">
+				<div class="inner">
+					<dl class="payment-detail-list">
+						<dt>Date</dt>
+						<dd>Tuesday, 19&nbsp;&nbsp;&nbsp;&nbsp;04:30pm</dd>
+						<dt>Service</dt>
+						<dd>Basic pedicure with Paty</dd>
+						<dt>Location</dt>
+						<dd>8502 Preston Rd. Inglewood</dd>
+						<dt>Payment</dt>
+						<dd class="payment-card-wrap">
+							<span class="payment-card"><img src="images/svg/icon-mastercard.svg" alt="master card"></span>
+							<span class="payment-num">**** 2345</span>
+						</dd>
+						<dt>Total</dt>
+						<dd class="total">$35</dd>
+					</dl>
+				</div>
+			</div>
+			<button type="button" class="btn btn-primary btn-bottom">Book</button>
+		</main>
+	</div>
+
+	<!-- POPUP -->
+	<div class="layer" style="display:none">
+		<strong class="blind">Add payment method</strong>
+		<div class="popup popup-payment-method" style="bottom:0">
+			<div class="popup-header">
+				<button type="button" class="btn-close"><img src="images/svg/icon-close.svg" alt=""></button>
+				<strong class="header-title">Add payment method</strong>
+			</div>
+			<div class="popup-content">
+				<ul class="payment-method-list">
+					<li class="payment-method-item">
+						<a href="#none" class="payment-method-link">
+							<div class="info">
+								<span class="image"><img src="images/svg/icon-apple-pay.svg" alt="Apple Pay"></span>
+								<span class="text">Apple Pay</span>
+							</div>
+							<span class="btn-pay"></span>
+						</a>
+					</li>
+					<li class="payment-method-item">
+						<a href="#none" class="payment-method-link">
+							<div class="info">
+								<span class="image"><img src="images/svg/icon-paypal.svg" alt="PayPal"></span>
+								<span class="text">PayPal</span>
+							</div>
+							<span class="btn-pay"></span>
+						</a>
+					</li>
+					<li class="payment-method-item">
+						<a href="#none" class="payment-method-link">
+							<div class="info">
+								<span class="image"><img src="images/svg/icon-cash.svg" alt="Cash"></span>
+								<span class="text">Cash</span>
+							</div>
+							<span class="btn-pay"></span>
+						</a>
+					</li>
+					<li class="payment-method-item is-exist">
+						<div class="info">
+							<span class="image"><img src="images/svg/icon-credit-card.svg" alt="Apple Pay"></span>
+							<span class="text">7236 xxxx xxxx 2345</span>
+						</div>
+						<button type="button" class="btn-remove">Remove</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="dimmed" style="display:block"></div>
+	</div>
+	<!-- END POPUP -->
+
+	<script src="js/libs/jquery.min.js"></script>
+	<script src="js/libs/swiper-bundle.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<!-- 마크업 검수용 -->
+	<style>
+		.caseview{position:fixed;bottom:30px;right:10px;padding:5px;background:rgba(0,0,0,0.5);z-index:700}
+		.caseview a{display:block;padding:5px;color:#fff;font-size:12px}
+		.caseview a:hover{color:gold}
+		.caseview .point_view{color:gold}
+	</style>
+	<div class="caseview">
+		<a href="#" class="caseviewOpen" onclick=";return false;">[Popup] Add payment method</a>
+	</div>
+</body>
+</html>
